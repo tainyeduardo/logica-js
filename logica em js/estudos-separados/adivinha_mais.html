@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinha 2.0</title>
+</head>
+<body>
+    <input/>
+    <button>Compare com o meu segredo</button>
+
+
+
+    <script>
+        var segredo = [5,7,10,2,3];
+        var input = document.querySelector("input");
+        input.focus(); /* já inicializa o site com o input selecionado, dando um foco pra ele */
+        input.value = "";
+
+        function verifica(){
+
+            var achou = false;
+            for (var posicao = 0; posicao < posicao.length; posicao++) {
+
+                if(input.value == segredo[posicao]){
+                    alert("voce acertou!");
+                    achou = true;
+                    break;
+                }
+            }
+
+            if(achou == false){
+                
+                alert("Voce errou;-;");
+            
+            }
+
+        }
+
+        var button = document.querySelector("button");
+        button.onclick = verifica;
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleição Candidatos ABC</title>
+    <link rel="stylesheet" href="../css/ex10.css">
+</head>
+<!-- Em uma eleição sindical concorreram ao cargo de presidente três candidatos (A, B e C).
+ Durante a apuração dos votos foram computados votos nulos e votos em branco,
+além dos votos válidos para cada candidato. Deve ser criado um programa de computador
+que efetue a leitura da quantidade de votos válidos para cada candidato,
+além de efetuar também a leitura da quantidade de votos nulos e votos em branco.
+Ao final o programa deve apresentar o número total de eleitores,
+considerando votos válidos, nulos e em branco; o percentual
+correspondente de votos válidos em relação à quantidade de eleitores;
+o percentual correspondente de votos válidos do candidato A em relação à quantidade de eleitores;
+o percentual correspondente de votos válidos do candidato B em relação à quantidade de eleitores;
+o percentual correspondente de votos válidos do candidato C em relação à quantidade de eleitores;
+o percentual correspondente de votos nulos em relação à quantidade de eleitores;
+e por último o percentual correspondente de votos em branco em relação à quantidade de eleitores. -->
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="conta">
+                <div class="texto">
+                    <h1>Eleição candidatos ABC</h1>
+                    <p>Para calcular o resultado das eleições,<br> primeiro insira:</p>
+                </div>
+                <input id="ca" type="text" placeholder="votos no candidato A :">
+                <input id="cb" type="text" placeholder="votos no candidato B:">
+                <input id="cc" type="text" placeholder="votos no candidato C:">
+                <input id="brancos" type="text" placeholder="votos brancos:">
+                <input id="nulos" type="text" placeholder="Votos nulos:">
+                
+                <button type="button" class="btn" onclick="calcular()">Calcular</button>
+
+                <p id="res1"></p><br>
+                <p id="res2"></p><br>
+                <p id="res3"></p><br>
+                <p id="res4"></p><br>
+                <p id="res5"></p><br>
+                <p id="res6"></p><br>
+                <p id="res7"></p><br>
+
+            </div>
+        </form>
+    </div>
+
+
+    <script src="../js/ex10.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste Salarial 2</title>
+    <link rel="stylesheet" href="../css/geral.css">
+</head>
+<!-- Ler o valor correspondente ao salário mensal (variável SM) de um trabalhador
+     e também o valor do percentual de reajuste (variável PR) a ser atribuído.
+     Apresentar o valor do novo salário (variável NS). -->
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="conta">
+                <div class="texto">
+                    <h1>Reajuste salarial 2</h1>
+                    <p>Para calcular o reajuste,<br> primeiro insira:</p>
+                </div>
+                <input id="sm" type="text" placeholder="Salário mensal :">
+                <input id="pr" type="text" placeholder="Percentual de reajuste:">
+                
+                <button type="button" class="btn" onclick="calcular()">Calcular</button>
+
+                <p id="res"></p>
+
+            </div>
+        </form>
+    </div>
+
+
+    <script src="../js/ex09.js"></script>
+</body>
+
+</html>
